@@ -1,4 +1,4 @@
-<%= form_tag '/top/login', method: :post do %>
+<%= form_tag '/top/login', method: :post, data: { turbo: false } do %>
     <%= label_tag :uid, 'ユーザーID' %>
     <%= text_field_tag :uid %>
     <%= label_tag :pass, 'パスワード' %>
