@@ -2,10 +2,10 @@
 
 
 <%= form_tag '/top/make', method: :post, data: { turbo: false } do %>
-    <%= label_tag :uid, 'ユーザーID' %>
+    <%= label_tag :uid, 'ユーザーID' %><br>
     <%= text_field_tag :uid %>
-    <%= label_tag :pass, 'パスワード' %>
+    <%= label_tag :pass, 'パスワード' %><br>
     <%= password_field_tag :pass %>
-    <%= submit_tag '登録' %>
+    <%= submit_tag '登録' %><br>
 <% end %>
 
