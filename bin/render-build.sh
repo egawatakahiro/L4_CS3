@@ -3,4 +3,4 @@
 bundle install
 bundle exec rake assets:precompile
 bundle exec rake assets:clean
-bundle exer rake db:migrate
+bundle exec rake db:migrate
