@@ -11,13 +11,8 @@ default: &default
 
 development:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  database: test_render_h3kh
-  username: test_render_h3kh_user
-  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
-  url: <%= ENV['DATABASE_URL'] %>
+  database: db/production.sqlite3
+
   
   # database: db/development.sqlite3
 
@@ -30,4 +25,10 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: test_render_h3kh
+  username: test_render_h3kh_user
+  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>

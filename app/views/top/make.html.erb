@@ -1,10 +1,11 @@
-<h1>登録します</h1>
+<h1>新規登録します</h1>
 
 
-<%= form_tag '/top/login', method: :post, data: { turbo: false } do %>
+<%= form_tag '/top/make', method: :post, data: { turbo: false } do %>
     <%= label_tag :uid, 'ユーザーID' %>
     <%= text_field_tag :uid %>
     <%= label_tag :pass, 'パスワード' %>
     <%= password_field_tag :pass %>
     <%= submit_tag '登録' %>
 <% end %>
+
